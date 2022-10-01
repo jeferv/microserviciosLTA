@@ -8,16 +8,20 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.moto-service</groupId>
-	<artifactId>moto-service</artifactId>
+	<groupId>carro.service</groupId>
+	<artifactId>carro.service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>moto-service</name>
+	<name>carro.service</name>
 	<description>Carro</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.4</spring-cloud.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -27,12 +31,6 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
